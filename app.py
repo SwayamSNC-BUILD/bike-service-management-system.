@@ -111,6 +111,8 @@ def money(value):
 
 app.jinja_env.filters["money"] = money
 
+setup_db()
+
 
 def services_list(active_only=True):
     con = db()
